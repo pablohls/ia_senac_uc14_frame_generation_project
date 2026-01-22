@@ -1,0 +1,54 @@
+# Deep Learning
+torch>=2.0.0
+torchvision>=0.15.0
+tensorflow>=2.13.0
+
+# Hugging Face
+transformers>=4.35.0
+diffusers>=0.24.0
+accelerate>=0.25.0
+
+# Video Processing
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+ffmpeg-python>=0.2.0
+imageio>=2.31.0
+imageio-ffmpeg>=0.4.9
+
+# Image Processing
+pillow>=10.0.0
+numpy>=1.24.0
+scikit-image>=0.21.0
+
+# API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+aiofiles>=23.2.1
+
+# Configuration
+pyyaml>=6.0.1
+python-dotenv>=1.0.0
+
+# Utilities
+tqdm>=4.66.0
+loguru>=0.7.2
+
+# Optional: Interface
+gradio>=4.0.0
+
+# Optional: Monitoring
+tensorboard>=2.15.0
+wandb>=0.16.0
+
+# Development
+pytest>=7.4.0
+pytest-cov>=4.1.0
+black>=23.11.0
+flake8>=6.1.0
+mypy>=1.7.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.26.0
+matplotlib>=3.8.0
