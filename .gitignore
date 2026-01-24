@@ -24,6 +24,7 @@ env/
 data/raw/*
 data/processed/*
 data/output/*
+data/vimeo_triplet/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/output/. gitkeep
