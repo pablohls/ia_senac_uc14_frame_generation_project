@@ -12,8 +12,9 @@ import time
 
 from .video_processor import VideoProcessor
 from .interpolator import FrameInterpolator
+from .device_utils import validate_device, get_optimal_num_workers
 
-logging.basicConfig(level=logging. INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 
@@ -46,7 +47,10 @@ class InterpolationPipeline:
         """Initialize the interpolation model"""
         logger.info("Initializing interpolation model...")
         
-        device = self.config.get('model', {}).get('device', 'cuda')
+        # Use device from config, or auto-detect
+        device_config = self.config.get('model', {}).get('device', 'auto')
+        device = validate_device(device_config)
+        
         self.interpolator = FrameInterpolator(model_name=self.model_name, device=device)
         self.interpolator.load_model()
         
