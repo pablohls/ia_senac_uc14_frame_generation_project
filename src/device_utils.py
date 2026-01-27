@@ -63,7 +63,7 @@ def get_optimal_num_workers():
         workers = 0
         logger.info(f"macOS detected: num_workers={workers} (multiprocessing disabled)")
     else:
-        workers = 4
+        workers = 0
         logger.info(f"{system} detected: num_workers={workers}")
     
     return workers
