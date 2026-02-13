@@ -25,6 +25,7 @@ data/raw/*
 data/processed/*
 data/output/*
 data/vimeo_triplet/*
+data/kaggle_emotion_classification/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/output/. gitkeep
@@ -34,6 +35,9 @@ models/pretrained/*
 models/finetuned/*
 !models/pretrained/.gitkeep
 ! models/finetuned/.gitkeep
+
+# Notebooks
+notebooks/raw_rnn_agnews/*
 
 # Temp
 temp/
