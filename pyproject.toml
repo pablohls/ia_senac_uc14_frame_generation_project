@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Frame generation project using deep learning"
 authors = ["Pablo Henrique <35077005+pablohls@users.noreply.github.com>"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = ">=3.11,<3.13"
@@ -45,9 +46,9 @@ datasets = "^4.5.0"
 evaluate = "^0.4.6"
 tf-keras = "^2.20.1"
 scikit-learn = "^1.8.0"
-torch = {version = "^2.7.1", source = "pytorch-gpu-src"}
-torchvision = {version = "^0.22.1", source = "pytorch-gpu-src"}
-torchaudio = {version = "^2.7.1", source = "pytorch-gpu-src"}
+torch = "2.7.1"
+torchvision = "0.22.1"
+torchaudio = "2.7.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=7.4.0"
@@ -57,10 +58,6 @@ flake8 = ">=6.1.0"
 mypy = ">=1.7.0"
 
 
-[[tool.poetry.source]]
-name = "pytorch-gpu-src"
-url = "https://download.pytorch.org/whl/cu118"
-priority = "explicit"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
