@@ -38,6 +38,7 @@ models/finetuned/*
 
 # Notebooks
 notebooks/raw_rnn_agnews/*
+notebooks/raw_lstm_agnews/*
 
 # Temp
 temp/
